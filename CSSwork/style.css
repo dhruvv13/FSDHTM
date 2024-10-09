@@ -20,7 +20,7 @@ body{
     padding: 100px 50px 40px;
     box-sizing: content-box;
 } */
- div p{
+ div>p{
     background-color: yellow;
     
  }
