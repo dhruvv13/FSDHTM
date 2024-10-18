@@ -1,0 +1,55 @@
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.header{
+    grid-row: 1/2 ;
+    grid-column: 1/12;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    border: 1px solid red;
+    color: white;
+}
+
+.navbar{
+    grid-row: 2/3;
+    grid-column: 1/13;
+    background-color: rgb(15,17,17);
+    color: white;
+    border: 1px solid red;
+    height: 60px;
+}
+ul li{
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+}
+li:hover{
+    background-color: aqua;
+}
+
+.card{
+    grid-row: 4/5;
+    grid-column: 1/13;
+    display: flex;
+}
+.card1,.card2,.card3,.card4{
+    height: 250px;
+    width: 200px;
+    border: 1px solid red;
+}
+
+.card1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
