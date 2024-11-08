@@ -14,10 +14,13 @@
 //const result = fun(23,12);
 //console.log(result);
 const button = document.getElementById("btn");
-console.dir(button);
+const output = document.getElementById('output');
+const select = document.getElementById('select')
+console.dir(select.value);
 
 function selectlanguage(language){
-    console.log("Hi, Inside Language")
+    console.log(language)
+    output.innerHTML="<h2>welcome to homepage</h2>"
     let data;
     if(language=='c'){
 function cCompiler()
@@ -35,4 +38,10 @@ data = javacompiler()
     }
     return data;
 }
-console.log(selectlanguage("java"));
+button.addEventListener("click",()=>{
+    // select.value
+    const comp = selectlanguage(select.value);
+    console.log(comp);
+     output.innerHTML=`<h2 style = color:red>${comp}</h2>`;
+});
+//console.log(selectlanguage("c"));
