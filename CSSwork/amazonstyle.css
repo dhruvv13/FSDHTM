@@ -1,55 +1,140 @@
 body{
     background-color: aliceblue;
-}
 
+}
 .container{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,1fr);
 }
-
 .header{
-    grid-row: 1/2 ;
-    grid-column: 1/12;
+    color: white;
+    grid-row: 1/2;
+    grid-column: 1/13;
     background-color: black;
-    height: 80px;
+    height: 70px;
+    border: 1px solid red;
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
-    border: 1px solid red;
-    color: white;
+    align-items: center;
 }
-
 .navbar{
     grid-row: 2/3;
     grid-column: 1/13;
-    background-color: rgb(15,17,17);
+    background-color: rgb(15,17, 17);
     color: white;
-    border: 1px solid red;
+    border: 1px solid greenyellow;
     height: 60px;
+
+
 }
 ul li{
     display: inline-block;
-    padding: 20px;
-    margin: 0px;
+    padding-top: 10px;
+    margin: 6px;
 }
 li:hover{
-    background-color: aqua;
+    background-color: cadetblue;
 }
+.wallpaper{
 
-.card{
+}
+.cards{
     grid-row: 4/5;
     grid-column: 1/13;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .card1,.card2,.card3,.card4{
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
     border: 1px solid red;
 }
-
 .card1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
+
+}
+.card11{
+    background-color: brown;
+    border: 1px solid;
+}
+.card12{
+    background-color: rgb(224, 212, 212);
+    border: 1px solid;
+}
+.card13{
+    background-color: rgb(70, 146, 181);
+    border: 1px solid;
+}
+.card14{
+    background-color: rgb(226, 197, 70);
+    border: 1px solid;
+}
+.card2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+.card21{
+    background-color: brown;
+    border: 1px solid;
+}
+.card22{
+    background-color: rgb(224, 212, 212);
+    border: 1px solid;
+}
+.card23{
+    background-color: rgb(70, 146, 181);
+    border: 1px solid;
+}
+.card24{
+    background-color: rgb(226, 197, 70);
+    border: 1px solid;
+}
+.card3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+.card31{
+    background-color: brown;
+    border: 1px solid;
+}
+.card32{
+    background-color: rgb(224, 212, 212);
+    border: 1px solid;
+}
+.card33{
+    background-color: rgb(70, 146, 181);
+    border: 1px solid;
+}
+.card34{
+    background-color: rgb(226, 197, 70);
+    border: 1px solid;
+}
+.card4{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+.card41{
+    background-color: brown;
+    border: 1px solid;
+}
+.card42{
+    background-color: rgb(224, 212, 212);
+    border: 1px solid;
+}
+.card43{
+    background-color: rgb(70, 146, 181);
+    border: 1px solid;
+}
+.card44{
+    background-color: rgb(226, 197, 70);
+    border: 1px solid;
 }
